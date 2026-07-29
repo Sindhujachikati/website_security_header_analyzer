@@ -1,0 +1,45 @@
+==================================================
+        Website Security Header Analyzer
+==================================================
+
+Enter Website URL:
+https://example.com
+
+Checking security headers...
+
+--------------------------------------------------
+Security Header Analysis
+--------------------------------------------------
+
+✓ Content-Security-Policy        : Present
+✗ X-Frame-Options                : Missing
+✓ X-Content-Type-Options         : Present
+✗ Strict-Transport-Security      : Missing
+✓ Referrer-Policy                : Present
+✗ Permissions-Policy             : Missing
+✓ Cache-Control                  : Present
+
+--------------------------------------------------
+
+Total Headers Checked : 7
+Headers Present       : 4
+Headers Missing       : 3
+
+Overall Risk Level    : Medium
+
+--------------------------------------------------
+
+Recommendations
+
+• Enable Strict-Transport-Security (HSTS)
+• Configure X-Frame-Options to prevent Clickjacking
+• Implement Permissions-Policy to restrict browser features
+
+--------------------------------------------------
+
+Security report generated successfully!
+
+Saved as:
+security_report.txt
+
+==================================================
